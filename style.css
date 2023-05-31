@@ -13,7 +13,8 @@ body{
     text-align: center;
 }
 .image img{
-    width: 30%;
+    height: 70vh
+    width: auto;
     align-content: center;
 
 
