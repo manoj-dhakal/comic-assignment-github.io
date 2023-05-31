@@ -9,21 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-
+    <script src="script.js"></script>
 </head>
 
 <body>
-
+<div class = "page">
 
 <div class="image">
     <img src="image/panel_up.jpeg">
 </div>
 <div class="navigation">
     <div class = "transit">
-    <a href="panel2.html">
+    <a href="panel2.html" class = "prev-link" onclick="handlePageTransition(event)">
         <img class = "left" src ="image/left.svg" width="50px" >
     </a>
-    <a href="panel4.html">
+    <a href="panel4.html" class = "next-link" onclick="handlePageTransition(event)">
         <img class="right" src="image/right.svg" width="50px" >
     </a>
     </div>
@@ -31,7 +31,7 @@
 
 </div>
 
-<!--<script src="script.js"></script>-->
+</div>
 </div>
 
 </body>

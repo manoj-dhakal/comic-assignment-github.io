@@ -44,11 +44,22 @@ h1{
     transform: scale(1.2);
     transition: 0.5s;
 }
-.transit{
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+
+}
+.page.active{
     opacity: 1;
-    transition: opacity 0.5s ease;
+}
+.page.next {
+  transform: translateX(100%);
 }
 
-.transit.clicked{
-    opacity: 0;
+.page.previous {
+  transform: translateX(-100%);
 }

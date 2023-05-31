@@ -1,18 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var links = document.querySelectorAll('.transit a');
+function handlePageTransition(event) {
+  event.preventDefault();
 
-  Array.from(links).forEach(function(link) {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
+  const nextPageURL = event.currentTarget.getAttribute('href');
+  const nextPageClass = event.currentTarget.classList.contains('next-link') ? 'next' : 'previous';
+  const currentPage = event.currentTarget.closest('.page');
 
-      var targetUrl = event.target.href;
-      var pageTransition = event.target.closest('.transit');
+  currentPage.classList.add(nextPageClass);
 
-      pageTransition.style.opacity = 0;
-
-      setTimeout(function() {
-        window.location.href = targetUrl;
-      }, 500);
-    });
-  });
-});
+  setTimeout(function() {
+    window.location.href = nextPageURL;
+  }, 500);
+}
