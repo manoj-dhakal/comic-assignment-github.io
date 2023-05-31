@@ -1,0 +1,54 @@
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-size: 50%;
+    color: brown;
+    background:  #E6E6FA;
+
+
+
+}
+.image{
+    margin-top: 50px;
+    text-align: center;
+}
+.image img{
+    width: 30%;
+    align-content: center;
+
+
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: black 2px 2px 4px;
+    color: #FF66CC;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.left{
+    margin-right: 300px;
+
+}
+.navigation a {
+  pointer-events: none;
+}
+
+.navigation img {
+  pointer-events: auto;
+}
+.navigation img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.transit{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.transit.clicked{
+    opacity: 0;
+}
