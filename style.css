@@ -3,22 +3,25 @@ body{
     font-family: "Oswald", sans-serif;
     font-size: 50%;
     color: brown;
-    background:  #E6E6FA;
-
-
+    background-image: url("image/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  rgba(0, 0, 0, 0);;
 
 }
+
 .image{
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
+
 .image img{
-    height: 70vh
+    height: 70vh;
     width: auto;
     align-content: center;
 
-
 }
+
 h1{
     text-align: center;
     font-size: 40px;
@@ -58,9 +61,14 @@ h1{
     opacity: 1;
 }
 .page.next {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .page.previous {
-  transform: translateX(-100%);
+  transform: translateX(+100%);
+}
+.empty{
+    height: 70vh;
+    width: auto;
+    align-content: center;
 }
