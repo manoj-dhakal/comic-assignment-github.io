@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Comic Display</title>
     <!--To create a responsive website, add the following <meta> tag to all your web pages-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
@@ -16,18 +15,19 @@
 <body>
 
 <div class="page">
-
 <div class="image">
-    <img src="image/cover.png">
+    <img src="image/panel8.png">
 </div>
 <div class="navigation">
-
-    <a href="panel1.html" class = "next-link" onclick="handlePageTransition(event)">
-        <img class="right" src="image/next.png" width="100px"  >
+    <div class = "transit">
+    <a href="panel6.html" class = "prev-link" onclick="handlePageTransition(event)">
+        <img class = "left" src ="image/prev.png" width="100px" >
+    </a>
+    <a href="panel-loop.html" class = "next-link" onclick="handlePageTransition(event)">
+        <img class="right" src="image/next.png" width="100px" >
     </a>
 
-
-
+    </div>
 
 </div>
 
@@ -36,3 +36,4 @@
 </body>
 
 </html>
+
